@@ -158,3 +158,8 @@ body {
   background-color: var(--button-hover);
 }
 
+#username {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
