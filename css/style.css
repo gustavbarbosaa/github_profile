@@ -16,9 +16,6 @@
 
 html,body {
   height: 100%;
-}
-
-body {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -33,8 +30,6 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
   height: 100%;
   text-align: center;
   background-color: var(--backgroud-primary);
