@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Profile - Search</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- Google fonts: Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header id="cabecalho">
+      <h1>GitHub Search</h1>
+      <p>Busque por perfis do Github aqui de forma simples</p>
+    </header>
+    <main id="conteudo">
+      <div class="pesquisa-container flex">
+        <div class="pesquisa">
+          <div class="input flex">
+            <i class="fas fa-search"></i>
+            <input type="text" name="pesquisa-input" id="pesquisa-input" placeholder="Digite o nome do usuário">
+          </div>
+        </div>
+        <button id="pesquisa-btn">Pesquisar</button>
+      </div>
+
+      <div id="resultado">
+        <div id="loading" class="loading oculto">
+          <i class="fas fa-spinner fa-spin"></i>
+          <p>Buscando usuário...</p>
+        </div>
+  
+        <div id="erro" class="erro"></div>
+  
+        <div id="perfil" class="perfil oculto">
+          <div class="perfil-container">
+            <div class="avatar flex">
+              <picture>
+                <img id="avatar_url" src="" alt="">
+              </picture>
+              <div>
+                <h3 id="nome"></h3>
+                <a href="" id="username"></p>
+              </div>
+            </div>
+            <div class="bio-container">
+              <p id="bio"></p>
+            </div>
+            <div class="numeros flex">
+              <div>
+                <h2 id="repositorios"></h2>
+                Repositórios
+              </div>
+              <div>
+                <h2 id="seguidores"></h2>
+                Seguidores
+              </div>
+              <div>
+                <h2 id="seguindo"></h2>
+                Seguindo
+              </div>
+            </div>
+            <a id="blog" href=""></a>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
